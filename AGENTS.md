@@ -1,5 +1,17 @@
 # Repository Guidelines
 
+## Codex review: no subagents
+
+Codex reviews code, issues, and pull requests itself without spawning
+subagents, including follow-up reviews after fixes. Panel requirements,
+lightweight reviewer requirements, and capability-based delegation rules
+do not apply to Codex review. This is the normal Codex review mode, not a
+fallback: three role-based passes and a weakened-independence disclaimer
+are not required. Codex checks correctness, invariants, tests, and evidence
+itself and returns one review result without claiming an independent panel.
+This exception applies only to Codex review. Review rules for other agents
+remain unchanged.
+
 ## Project Structure & Module Organization
 
 This is an Electron + Vue app built with `electron-vite`. Source code lives under `src/`:
